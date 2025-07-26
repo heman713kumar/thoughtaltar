@@ -1,13 +1,13 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Header from './components/Header.jsx'
-import Footer from './components/Footer.jsx'
-import Home from './pages/Home.jsx'
-import About from './pages/About.jsx'
-import Blog from './pages/Blog.jsx'
-import Contact from './pages/Contact.jsx'
-import Letters from './pages/Letters.jsx'
-import Ideas from './pages/Ideas.jsx'
-import './App.css'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/Header.jsx';
+import Footer from './components/Footer.jsx';
+import Home from './pages/Home.jsx';
+import About from './pages/About.jsx';
+import Blog from './pages/Blog.jsx';
+import Contact from './pages/Contact.jsx';
+import Letters from './pages/Letters.jsx';
+import Ideas from './pages/Ideas.jsx';
+import './App.css';
 
 function App() {
   return (
@@ -27,8 +27,7 @@ function App() {
         <Footer />
       </div>
     </Router>
-  )
+  );
 }
 
-export default App
-
+export default App;
