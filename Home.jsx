@@ -1,6 +1,6 @@
 import { ArrowRight, BookOpen, Heart, Lightbulb, MessageCircle } from 'lucide-react'
 import { Button } from '@/components/ui/button.jsx'
-import BlogCard from '../components/BlogCard.jsx'
+import BlogCard from './components/BlogCard.jsx'
 
 const Home = () => {
   // Sample blog posts data
