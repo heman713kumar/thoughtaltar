@@ -1,6 +1,7 @@
 import { ArrowRight, BookOpen, Heart, Lightbulb, MessageCircle } from 'lucide-react'
 import { Button } from '@/components/ui/button.jsx'
 import BlogCard from './components/BlogCard.jsx'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   // Sample blog posts data
@@ -71,9 +72,11 @@ const Home = () => {
                 Start Reading
                 <ArrowRight size={20} className="ml-2" />
               </Button>
-              <Button variant="outline" size="lg" className="px-8 py-3">
-                About This Journey
-              </Button>
+              <Link to="/about">
+                <Button variant="outline" size="lg" className="px-8 py-3">
+                  About This Journey
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

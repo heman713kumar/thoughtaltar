@@ -140,7 +140,7 @@ const Blog = () => {
           `action` attribute accordingly.
         */}
         <form
-          action="https://formspree.io/f/your-form-id"
+          action="mailto:hemantkumar.official1@gmail.com"
           method="POST"
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
