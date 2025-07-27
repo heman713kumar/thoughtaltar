@@ -68,6 +68,16 @@ const Blog = () => {
       readTime: 10,
       category: "Philosophy",
       slug: "philosophy-of-ai-and-consciousness"
+    },
+    // Added from uploaded article: a long-form reflective dialogue between friends. The slug corresponds
+    // to the route defined in App.jsx.
+    {
+      title: "I Wish I Could Have Done That…",
+      excerpt: "A reflective dialogue exploring regret, presence and how to live fully.",
+      date: "July 26, 2025",
+      readTime: 20,
+      category: "Reflections",
+      slug: "i-wish-i-could-have-done-that"
     }
   ]
 
@@ -114,6 +124,40 @@ const Blog = () => {
         {filteredPosts.map((post) => (
           <BlogCard key={post.slug} {...post} />
         ))}
+      </div>
+
+      {/* Newsletter Subscription Section */}
+      <div className="mt-16 bg-white p-8 rounded-lg shadow text-center">
+        <h2 className="text-2xl font-bold mb-4">Never Miss a Thought</h2>
+        <p className="mb-6 text-gray-600">
+          Subscribe to get new reflections delivered directly to your inbox.
+        </p>
+        {/*
+          Replace `your-form-id` below with the ID provided by your email
+          subscription service (for example, a Formspree form ID). When a
+          visitor submits the form their email address will be sent to that
+          service. If you prefer to use a different provider, update the
+          `action` attribute accordingly.
+        */}
+        <form
+          action="https://formspree.io/f/your-form-id"
+          method="POST"
+          className="flex flex-col sm:flex-row gap-4 justify-center"
+        >
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="Enter your email"
+            className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900"
+          />
+          <Button
+            type="submit"
+            className="bg-gray-900 hover:bg-gray-800 text-white px-6 py-3"
+          >
+            Subscribe
+          </Button>
+        </form>
       </div>
     </div>
   )

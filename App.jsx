@@ -7,6 +7,7 @@ import Blog from './pages/Blog.jsx';
 import Contact from './pages/Contact.jsx';
 import Letters from './pages/Letters.jsx';
 import Ideas from './pages/Ideas.jsx';
+import IWishICouldHaveDoneThat from './pages/IWishICouldHaveDoneThat.jsx';
 import './App.css';
 
 function App() {
@@ -19,6 +20,11 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/blog" element={<Blog />} />
+            {/* Route for the long-form article created from the uploaded Word file */}
+            <Route
+              path="/blog/i-wish-i-could-have-done-that"
+              element={<IWishICouldHaveDoneThat />}
+            />
             <Route path="/contact" element={<Contact />} />
             <Route path="/letters" element={<Letters />} />
             <Route path="/ideas" element={<Ideas />} />
